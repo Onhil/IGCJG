@@ -16,7 +16,7 @@ func apiUptime(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/igcinfo/api", apiUptime)
-	err := http.ListenAndServe(":8080", nil) // set listen port
+	err := http.ListenAndServe(":", nil) // set listen port
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
