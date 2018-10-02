@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 )
 
 func apiUptime(w http.ResponseWriter, r *http.Request) {
@@ -14,6 +15,15 @@ func apiUptime(w http.ResponseWriter, r *http.Request) {
 
 }
 
+func GetPort() string {
+	var port = os.Getenv("PORT")
+
+	if port == "" {
+		port = "8080"
+
+	}
+	return ":" + port
+}
 func main() {
 	http.HandleFunc("/igcinfo/api", apiUptime)
 	err := http.ListenAndServe(":", nil) // set listen port
