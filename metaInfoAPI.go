@@ -9,6 +9,5 @@ type MetaInfo struct {
 
 // Uptime returns app uptime in the ISO 8601 standard
 func Uptime() string {
-	sysinfo
-
+	return "P"
 }
