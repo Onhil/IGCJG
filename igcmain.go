@@ -1,15 +1,16 @@
 package main
 
 import (
-	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 )
 
 func apiUptime(w http.ResponseWriter, r *http.Request) {
 	http.Header.Add(w.Header(), "content-type", "application/json")
-	apiMessage := MetaInfo("Service for IGC tracks.", "v1")
-	b, err := json.Marshal(apiMessage)
+	//apiMessage := MetaInfo("Service for IGC tracks.", "v1")
+	//b, err := json.Marshal(apiMessage)
+	fmt.Fprintf(w, "herokutest")
 
 }
 
