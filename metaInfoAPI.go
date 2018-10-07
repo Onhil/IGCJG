@@ -8,6 +8,6 @@ type MetaInfo struct {
 }
 
 // Uptime returns app uptime in the ISO 8601 standard
-func Uptime() string {
-	return "P"
+func Uptime() MetaInfo {
+	return MetaInfo{"P", "info", "v"}
 }
