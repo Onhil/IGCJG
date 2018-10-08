@@ -1,1 +1,1 @@
-# IGCJG
+# igcinfo

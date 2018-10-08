@@ -1,1 +1,1 @@
-web: IGCJG
+web: igcinfo
