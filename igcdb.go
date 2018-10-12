@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/marni"
+	"github.com/marni/goigc"
 )
 
 // Track data
