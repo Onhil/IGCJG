@@ -73,7 +73,7 @@ func dbGetTrack(idURL string) (Track, error) {
 	if ok {
 		return data, nil
 	}
-	return track, errors.New("Track ID '+ idURL +' does not exist")
+	return track, errors.New("Track ID " + idURL + " does not exist")
 }
 
 func (track *Track) dbField(field string) (string, error) {
@@ -85,5 +85,5 @@ func (track *Track) dbField(field string) (string, error) {
 		}
 
 	}
-	return "", errors.New("Track has no field '+ field +'")
+	return "", errors.New("Track has no field " + field)
 }
