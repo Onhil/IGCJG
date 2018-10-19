@@ -13,3 +13,6 @@ It's an RESTful API with 5 available calls:
 	Returns track data (fields) for a valid `id`
 - `GET /api/igc/<id>/<field>`
 	Returns track `field` for a valid `id` and `field`
+	
+Demo of app
+ - `https://igcjg.herokuapp.com/`
