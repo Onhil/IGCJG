@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"reflect"
+	"sort"
 	"strconv"
 	"time"
 
@@ -31,6 +32,7 @@ func dbGetTrackIDs() []int {
 	for id := range db {
 		ids = append(ids, id)
 	}
+	sort.Ints(ids)
 	return ids
 }
 
