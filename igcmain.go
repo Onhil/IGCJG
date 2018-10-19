@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"log"
 	"net/http"
 	"os"
 	"time"
@@ -104,5 +105,5 @@ func main() {
 			})
 		})
 	})
-	http.ListenAndServe(GetPort(), router) // set listen port
+	log.Fatal(http.ListenAndServe(GetPort(), router)) // set listen port
 }
